@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*-* Utility Components *-*-*-*-*-*-*-*-*-*-*-*-* */
+
+:root {
+    font-size: 62.5%;
+
+    /**** Custom Properties ****/
+
+    /* Main Color */
+    --primary-color: hsl(212, 45%, 89%);
+
+    /* Secondary Color */
+    --secondary-color: hsl(0, 0%, 100%);
+
+    /* Font Color */
+    --font-color-h: hsl(218, 44%, 22%);
+    --font-color-p: hsl(220, 15%, 55%);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1, p {
+    padding-bottom: 1.5rem;
+}
+
+h1 {
+    color: var(--font-color-h);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+p {
+    color: var(--font-color-p);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*-* Main Styling*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+div.card {
+    background-color: var(--secondary-color);
+    border-radius: 1.7rem;
+    box-shadow: 5px 22px 71px -8px hsl(212, 17%, 80%);
+    margin: 4rem 1rem;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    width: 32rem;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card__img {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+div.card__img img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+div.card__content {
+    width: 85%;
+}
+
+div.attribution { 
+    font-size: 1.1rem;
+}
+
+div.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
