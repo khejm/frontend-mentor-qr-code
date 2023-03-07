@@ -6,12 +6,10 @@
     padding: 0;
 }
 
-/* *-*-*-*-*-*-*-*-*-*-*-*-* Utility Components *-*-*-*-*-*-*-*-*-*-*-*-* */
 
 :root {
     font-size: 62.5%;
 
-    /**** Custom Properties ****/
 
     /* Main Color */
     --primary-color: hsl(212, 45%, 89%);
@@ -54,7 +52,7 @@ p {
 
 /* *-*-*-*-*-*-*-*-*-*-*-*-* Main Styling*-*-*-*-*-*-*-*-*-*-*-*-* */
 
-div.card {
+.card {
     background-color: var(--secondary-color);
     border-radius: 1.7rem;
     box-shadow: 5px 22px 71px -8px hsl(212, 17%, 80%);
@@ -70,25 +68,25 @@ div.card {
     justify-content: center;
 }
 
-div.card__img {
+.card__img {
     padding: 0.5rem;
     margin-bottom: 2rem;
 
 }
 
-div.card__img img {
+.card__img img {
     border-radius: 1rem;
     width: 100%;
 }
 
-div.card__content {
+.card__content {
     width: 85%;
 }
 
-div.attribution { 
+.attribution { 
     font-size: 1.1rem;
 }
 
-div.attribution a { 
+.attribution a { 
     color: hsl(228, 45%, 44%); 
 }
